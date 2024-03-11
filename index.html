@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 4th</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        body {
+            letter-spacing: 1px;
+            word-spacing: 5px;
+        }
+
+        .setimg {
+            background-image: url(first.jpg);
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .top {
+            position: absolute;
+            background-color: #e5eaebd0;
+            color: #1F2544;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.50) 0px 6px 6px;
+            max-width: 1000px;
+            margin: 210px 20px 20px 48px;
+            padding: 20px;
+        }
+
+        .top .textweight {
+            font-size: 50px;
+            font-weight: 200;
+        }
+
+        .top .textheight,
+        .belowhead .textheight {
+            font-size: 75px;
+        }
+
+        .belowhead {
+            background-color: #191919;
+            color: azure;
+            font-size: 30px;
+            text-align: center;
+            padding: 80px 2px;
+        }
+
+       
+        .cardcontainer{
+         display: flex;
+         justify-content: center;
+         padding: 20px;
+         
+        }
+        .card{
+            width: 300px;
+            height: 400px;
+            /* border: 5px solid rgb(61, 97, 61); */
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            margin: 20px;
+        }
+        .cardcontainer .card .imgheight{
+            height: 12rem;
+            background-color: aqua;
+           
+        }
+        .cardcontainer .card #coder{
+            background-image: url(coder.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .cardcontainer .card #hacker{
+            background-image: url(hacker.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .cardcontainer .card #ux{
+            background-image: url(ui.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .cardcontainer .card .paralign{
+            margin: 15px;
+        }
+        /* bottom */
+        .bottom{
+            height: 350px;
+            display: flex;
+        }
+        .bottom div{
+            border: 3px solid red;
+           width: 100%;
+        }
+        #box1{
+            background-color: #2D9596;
+            
+        }
+        #box2{
+            background-color: #535C91;
+        }
+        .box{
+            padding: 40px;
+            font-size: 20px;
+            color: white;
+        }
+        @media (max-width:800px){
+            .bottom{
+                flex-wrap: wrap;
+              
+            }
+            .cardcontainer{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        @media (max-width:350px){
+            .card{
+                width: 240px;
+            }
+        }
+        /* footer */
+        
+      
+       /* media for heading */
+       @media (max-width:992px){
+        .setimg{
+            height: 300px;
+        }
+        .top{
+            width: 500px;
+            margin-top: 65px;
+            padding: 10px;
+        }
+        .top .textweight {
+            font-size: 30px;
+            
+        }
+        .top .textheight,
+        .belowhead .textheight {
+            font-size: 40px;
+        }
+        .belowhead {
+            font-size: 25px;
+            padding: 50px 2px;
+            
+        }
+
+      
+       }
+       @media (max-width:800px){
+        .belowhead{
+            font: 2px;
+        }
+       }
+       @media (max-width:595px){
+        .setimg{
+            width: 100%;
+        }
+        .top{
+            /* width: 100%; */
+            margin-left: 10px;
+            margin-right:10px ;
+        }
+       }
+       @media (max-width: 520px){
+        .top{
+            width: 90%;
+        }
+       }
+       @media (max-width:370px){
+        .top .textweight {
+            font-size: 70%;  
+        }
+        .top .textheight {
+            font-size: 100%;
+        }
+        .setimg{
+            height: 200px;
+        }
+       
+       }
+    </style>
+</head>
+
+<body>
+    <section class="setimg">
+        <div class="top">
+            <h2 class="textweight"><span class="textheight">Hi,</span>This is Ankur Antal</h2>
+            <h1 class="textweight textheight">FULL STACK DEVELOPER</h1>
+        </div>
+    </section>
+    <section class="belowhead">
+        <h4>Pleasure in the job puts perfection in the <span class="textheight">work.</span></h4>
+    </section>
+    <section>
+        <div class="cardcontainer">
+            <div class="card">
+                <!-- <img src="coder2.jpg" alt=""> -->
+                <div class="imgheight" id="coder"></div>
+                <h3 class="paralign">Coding</h3>
+                <p class="paralign">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sit tenetur consequuntur tempora! Deleniti, illum.</p>
+            </div>
+            <div class="card">
+                <!-- <img src="hacker.jpg" alt=""> -->
+                <div class="imgheight" id="hacker"></div>
+                <h3 class="paralign">Ethical Hacking</h3>
+                <p class="paralign">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A neque, distinctio ullam quaerat fugit exercitationem.</p>
+            </div>
+            <div class="card">
+                <!-- <img src="ui.jpg" alt=""> -->
+                <div class="imgheight" id="ux"></div>
+                <h3 class="paralign">UX Designer</h3>
+                <p class="paralign">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A neque, distinctio ullam quaerat fugit exercitationem.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="bottom">
+        <div class="box" id="box1">
+            <h2>Contact Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui suscipit consequatur libero voluptate, eligendi, vel, veritatis sunt veniam est quibusdam ducimus sequi assumenda aspernatur? Officiis qui fuga nobis repudiandae a?</p>
+            <a href="">kashyap@gmail.com</a>
+        </div>
+        <div class="box" id="box2">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis provident nisi possimus incidunt, obcaecati dolore consequatur vitae asperiores et odio? Quod qui vel ea cum aliquid, quibusdam reprehenderit esse fuga error ullam, est aspernatur fugit facilis temporibus, vero quidem quo.</p>
+        </div>
+    </section>
+<section>
+    <div class="hackar">
+    
+    </div>
+</section>
+   
+    
+
+</body>
+
+</html>
